@@ -1,0 +1,155 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+nav{overflow: visible; }
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.footer-copyright{
+    padding-bottom: 30px;
+}
+footer{
+    position: relative;
+}
+
+.logo{
+    margin-top: 4px;
+}
+
+.superponer{
+    position: absolute;
+    top: 20%;
+    right: 2.5%;
+
+
+}
+
+.widget{
+    position: relative;
+    word-break: break-all;
+}
+
+
+.witget-derecho{
+    position: fixed;
+    right: 0px;
+}
+
+
+
+
+.parrafo{
+    text-align: justify;
+    font-size: large;
+}
+
+.contenido{
+
+}
+
+.mapaDelSitio{
+    padding-left: 8%;
+}
+
+.redesSociales li{
+    padding: 3px;
+      display: inline;
+
+  }
+
+
+.redesSociales> li> a> img:hover{
+    width: 55px;
+}
+
+.redesSociales> li> a> img{
+    width: 50px;
+    transition: 0.3s ;
+}
+
+.animacionImagen>img{
+    transition: 0.3s;
+}
+
+.animacionImagen>img:hover{
+    width:75px ;
+}
+
+.card-1{
+    padding-bottom: 100px !important;
+}
+
+.container-menu{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90% !important;
+}
+.fila{
+    background-image: url("../imagenes/mapa.png") ;
+    width: 150%;height: 500px;
+    background-repeat: no-repeat;
+}
+
+.autor{
+    text-align: right;
+    font-size: small;
+color: #b3b3b3;
+
+}
+
+.justificar{
+  text-align: justify;
+}

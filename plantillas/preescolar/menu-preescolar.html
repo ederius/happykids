@@ -1,0 +1,121 @@
+<nav class="hide-on-small-only green accent-4">
+    <div class="nav-wrapper">
+        <div class="col s12 mapaDelSitio white-text text-darken-4   ">
+            <a  class="breadcrumb">Preescolar</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <div class="row contenido">
+        <div class="card card-content col s9 card-1">
+
+            <div class="container">
+                <div id="himno" class="section scrollspy">
+                    <h4 class="center">Preescolar</h4><br>
+                    <div class="row">
+                        <div class="col s12">
+                        <br>
+                            <div class="divider"></div>
+                            <br>
+                            <div class="row">
+                                <div class="container">
+                                <a href="#/preescolar/noticias" class="waves-effect waves-light btn blue darken-3 left"><i class="material-icons left">cloud</i>Noticias</a>
+                                <a href="#/preescolar" class="modal-trigger waves-effect waves-light btn blue darken-3 right" ><i class="material-icons left">cloud</i>Actividades</a>
+                             </div>
+                            </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col hide-on-small-only m3 l3 witget-derecho">
+            <ul class="section table-of-contents">
+                <li><a href="#himno">Preescolar</a></li>
+            </ul>
+            <div class="row">
+                <div class="col s12"  ng-include src="'plantillas/widget/sidebar.html'"> </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <div id="modal1" class="modal">
+    <div class="modal-content col s5">
+     
+        <div class="card ">
+
+            <div class="card-content center center-align">
+                <img src="imagenes/logo.png" width="70" class=" circle center-block center-align">
+                <br></br>
+
+                        <div class="row">
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">person_pin</i>
+                                <input id="usuario" name="usuario" type="text" class="validate" >
+                                <label for="usuario">Usuario</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">https</i>
+                                <input id="contra" name="contra" type="password" class="validate">
+                                <label for="contra">Contraseña</label>
+                            </div>                                       
+                        </div>
+
+                <div id="error" class=" waves-light center-align"></div>
+
+                 <a  class="waves-effect waves-light btn center white-text entrar">Entrar <i class="material-icons right white-text">play_arrow</i></a>
+             </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+  </div>
+
+<script >
+    
+
+    $(".modal-trigger").on('click',function(){
+             $('#modal1').openModal();
+    });         
+
+
+    var usuario   ='happykids';
+    var contrasena='happy';
+    
+    $('.entrar').live('click', function(){
+
+        if ($('#usuario').val()!=usuario) {
+            alert('Usuario invalido!')
+        }
+        else {
+                if ($('#contra').val()!=contrasena) {
+                 alert('Contraseña invalida!')
+                      
+    
+                } 
+                else{
+
+                          if($('#usuario').val()==usuario && $('#contra').val()==contrasena ){
+                          document.location.href="#/preescolar/actividades";
+                          location.reload();
+                    }
+                }
+            }
+    })
+
+
+
+</script>
