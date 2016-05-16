@@ -6,25 +6,22 @@
     <meta name="Title" content="Centro de enseñanza y estimulaci&oacute;n Happy kids">
     <meta name="rights" content="Centro de enseñanza y estimulaci&oacute;n Happy kids">
     <meta name="Description" content="Nuestra misión es brindar formación integral y personalizada a niños y niñas en los niveles maternal, preescolar y primaria, que logre 		   potenciar valores, capacidades y habilidades, acompañado de un aprendizaje feliz, basado en el afecto, que le permita desarrollar seguridad, independencia y capacidad de análisis. Lo que facilitará desenvolverse adecuadamente en cualquier circunstancia. Igualmente buscamos la estimulación y el desarrollo de las inteligencias múltiples.">
-<meta name="robots" content="index, follow" />
-<meta name="keywords" content="Happy Kids, Happykids, mejores colegios, Riohacha, La Guajira">
-<meta name="google-site-verification" content="9BbdmBL-MvqydPsYL0iEPwUfRdKkfdzL0aCbtJdQscc" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Happy Kids, Happykids, mejores colegios, Riohacha, La Guajira">
+    <meta name="google-site-verification" content="9BbdmBL-MvqydPsYL0iEPwUfRdKkfdzL0aCbtJdQscc" />
 
     <title>Centro de enseñanza y estimulaci&oacute;n Happy Kids</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-    <!--  Scripts-->
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/angular/angular.min.js"></script>
-    <script src="js/angular/angular-route.min.js"></script>
-    <script src="js/ng-tweet.js"></script>
+
+
 
 
 
@@ -50,22 +47,21 @@
 
 
 
-<script src="js/init.js"></script>
-<script src="js/angular/script.js"></script>
 
 </html>
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!--  Scripts-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-route.min.js"></script>
+    <script src="js/jquery.sldr.js"></script>
+    <script src="js/ng-tweet.js"></script>
 
-  ga('create', 'UA-74193575-1', 'auto');
-  ga('send', 'pageview');
+    <script src="js/init.js"></script>
+    <script src="js/angular/script.js"></script>
 
-</script>
 
 
     <script type="text/javascript" src="js/source/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -89,3 +85,93 @@
             $('.fancybox').fancybox();
        
     </script>
+
+    <script>
+
+$( window ).load( function() {
+
+    $( '.sldr' ).each( function() {
+        var th = $( this );
+        th.sldr({
+            focalClass    : 'focalPoint',
+            offset        : th.width() / 2,
+            sldrWidth     : 'responsive',
+            nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+            previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+            selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+            toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+            sldrInit      : sliderInit,
+            sldrStart     : slideStart,
+            sldrComplete  : slideComplete,
+            sldrLoaded    : sliderLoaded,
+            sldrAuto      : true,
+            sldrTime      : 5000,
+            hasChange     : true
+        });
+    });
+
+});
+
+/**
+ * Sldr Callbacks
+ */
+
+/**
+ * When the sldr is initiated, before the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderInit( args ) {
+
+}
+
+/**
+ * When individual slides are loaded
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideLoaded( args ) {
+
+}
+
+/**
+ * When the full slider is loaded, after the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderLoaded( args ) {
+
+}
+
+/**
+ * Before the slides change focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideStart( args ) {
+
+}
+
+/**
+ * After the slides are done changing focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideComplete( args ) {
+
+}
+
+</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74193575-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
