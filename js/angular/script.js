@@ -80,6 +80,18 @@ miAplicacion.config(['$routeProvider',function($routerProvider) {
         templateUrl: 'plantillas/primaria/jornada-electoral.html'
     }).when('/primaria/noticias/reunion-consejo', {
         templateUrl: 'plantillas/primaria/reunion-consejo.html'
+    }).when('/primaria/noticias/superate-deporte', {
+        templateUrl: 'plantillas/primaria/conpetencia-superate.html'
+    }).when('/primaria/noticias/proyecto-tiempo-libre', {
+        templateUrl: 'plantillas/primaria/proyectoAprovechamientotiempoLibre.html'
+    }).when('/primaria/noticias/diaE-familia', {
+        templateUrl: 'plantillas/primaria/diaE-de-la-familia.html'
+    }).when('/primaria/noticias/dia-del-arbol', {
+        templateUrl: 'plantillas/primaria/dia-del-arbol.html'
+    }).when('/primaria/noticias/dia-del-agua', {
+        templateUrl: 'plantillas/primaria/diaAgua.html'
+    }).when('/primaria/noticias/dia-del-idioma', {
+        templateUrl: 'plantillas/primaria/dia-del-idioma.html'
     }).when('/preescolar/noticias', {
         templateUrl: 'plantillas/preescolar/resumenNoticiasPreescolar.html'
     }).when('/preescolar/actividades', {
