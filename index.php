@@ -56,7 +56,6 @@
     <script src="js/materialize.min.js"></script>
     <script src="js/angular/angular.min.js"></script>
     <script src="js/angular/angular-route.min.js"></script>
-    <script src="js/jquery.sldr.js"></script>
     <script src="js/ng-tweet.js"></script>
 
     <script src="js/init.js"></script>
@@ -83,12 +82,31 @@
 
         <script>
             $('.fancybox').fancybox();
-       
     </script>
 
-    <script>
 
-$( window ).load( function() {
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74193575-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script >
+    $(document).live("ready", function(){
+        $(".twitter").load("plantillas/widget/sidebar.html");
+    })
+</script>
+<script>
+$(window).load( function() {
 
     $( '.sldr' ).each( function() {
         var th = $( this );
@@ -109,69 +127,8 @@ $( window ).load( function() {
             hasChange     : true
         });
     });
-
 });
 
-/**
- * Sldr Callbacks
- */
 
-/**
- * When the sldr is initiated, before the DOM is manipulated
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function sliderInit( args ) {
-
-}
-
-/**
- * When individual slides are loaded
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function slideLoaded( args ) {
-
-}
-
-/**
- * When the full slider is loaded, after the DOM is manipulated
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function sliderLoaded( args ) {
-
-}
-
-/**
- * Before the slides change focal points
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function slideStart( args ) {
-
-}
-
-/**
- * After the slides are done changing focal points
- * @param {object} args the slides, callback, and config of the slider
- * @return null
- */
-function slideComplete( args ) {
-
-}
-
-</script>
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-74193575-1', 'auto');
-  ga('send', 'pageview');
 
 </script>
