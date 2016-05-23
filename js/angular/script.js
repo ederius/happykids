@@ -92,6 +92,14 @@ miAplicacion.config(['$routeProvider',function($routerProvider) {
         templateUrl: 'plantillas/primaria/diaAgua.html'
     }).when('/primaria/noticias/dia-del-idioma', {
         templateUrl: 'plantillas/primaria/dia-del-idioma.html'
+    }).when('/primaria/noticias/experimento-2b', {
+        templateUrl: 'plantillas/primaria/experimento-2b.html'
+    }).when('/primaria/noticias/dia-del-nino', {
+        templateUrl: 'plantillas/primaria/dia-del-nino.html'
+    }).when('/primaria/noticias/dia-del-maestro', {
+        templateUrl: 'plantillas/primaria/diaMaestro.html'
+    }).when('/primaria/noticias/deporte-cancha-sintetica', {
+        templateUrl: 'plantillas/primaria/canchaSintetica.html'
     }).when('/preescolar/noticias', {
         templateUrl: 'plantillas/preescolar/resumenNoticiasPreescolar.html'
     }).when('/preescolar/actividades', {

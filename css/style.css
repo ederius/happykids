@@ -96,6 +96,7 @@ footer{
 .parrafo{
     text-align: justify;
     font-size: large;
+    float: left;
 }
 
 .contenido{
@@ -155,3 +156,12 @@ color: #b3b3b3;
 .justificar{
   text-align: justify;
 }
+
+img{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float:  !important;
+
+  }
