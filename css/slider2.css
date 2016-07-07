@@ -3,7 +3,7 @@ body {   margin: 0; }
 .sldr button { margin-top: 10px; }
 
 .sldr ul {
-	color: #666666;
+	color: #ECECEC;
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -43,7 +43,7 @@ ul.animate {
             transition: transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000); /* ease-in-out */	
 }
 
-.stage {
+ .stage {
 	width: 76%;
 	margin: 0 auto;
 	padding: 0 12%;
@@ -52,7 +52,7 @@ ul.animate {
 }
 	
 .sldr {
-	max-width: 600px;
+	max-width: 825px;
 	margin: 0 auto;
 	overflow: visible;
 	position: relative;
@@ -63,11 +63,11 @@ ul.animate {
 .sldr > ul > li {
 	float: left;
 	display: block;
-	width: 600px;
+	width: 825px;
 }
 
-div.skew {
-	max-width: 600px;
+ div.skew {
+	max-width: 825px;
 	margin: 0 auto;
 
 	display: block;
@@ -79,7 +79,7 @@ div.skew {
             transform: skewX(16deg);
 }
 
-div.skew > div.wrap {
+ div.skew > div.wrap {
 	display: block;
 	overflow: hidden;
 
@@ -88,22 +88,23 @@ div.skew > div.wrap {
 	    -ms-transform: skewX(-16deg);
 	        transform: skewX(-16deg);
 
-	margin-left: -15.9%;
-	width: 132%;
+	margin-left: -10.1%;
+	width: 122%;
 }
 
 .sldr img {
-	max-width: 720px;
-
+	max-width: 1000px;
+	width: 100%;
 	height: auto;
+	display: block;
 	margin: 0 auto;
 }
 
-.selectors {
+ .selectors {
 	/*margin: 15px 0 0;*/
 }
 
-.selectors li {
+ .selectors li {
 	font-size: 46px;
 	line-height: 32px;
 	display: inline;

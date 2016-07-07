@@ -100,18 +100,26 @@ miAplicacion.config(['$routeProvider',function($routerProvider) {
         templateUrl: 'plantillas/primaria/diaMaestro.html'
     }).when('/primaria/noticias/deporte-cancha-sintetica', {
         templateUrl: 'plantillas/primaria/canchaSintetica.html'
+    }).when('/primaria/noticias/dia-afro', {
+        templateUrl: 'plantillas/primaria/dia-afro.html'
+    }).when('/primaria/noticias/dona-conocimiento', {
+        templateUrl: 'plantillas/primaria/donaConocimiento.html'
     }).when('/preescolar/noticias', {
         templateUrl: 'plantillas/preescolar/resumenNoticiasPreescolar.html'
     }).when('/preescolar/actividades', {
         templateUrl: 'plantillas/preescolar/resumen-actividades.html'
     }).when('/preescolar/noticias/proyecto-mi-cuerpo', {
         templateUrl: 'plantillas/preescolar/proyecto-mi-cuerpo.html'
+    }).when('/preescolar/noticias/dia-de-granja', {
+        templateUrl: 'plantillas/preescolar/dia-granja.html'
     }).when('/preescolar', {
         templateUrl: 'plantillas/preescolar/menu-preescolar.html'
     }).when('/maternal', {
         templateUrl: 'plantillas/maternal/resumenNoticias.html'
     }).when('/maternal/noticias/cierre-proyecto1m', {
         templateUrl: 'plantillas/maternal/cierre-proyecto1m.html'
+    }).when('/maternal/noticias/dia-de-granja-maternal', {
+        templateUrl: 'plantillas/maternal/dia-granja.html'
     }).otherwise({
         redirectTo:'/',
         templateUrl:'plantillas/body.html'
