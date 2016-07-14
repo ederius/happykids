@@ -104,6 +104,8 @@ miAplicacion.config(['$routeProvider',function($routerProvider) {
         templateUrl: 'plantillas/primaria/dia-afro.html'
     }).when('/primaria/noticias/dona-conocimiento', {
         templateUrl: 'plantillas/primaria/donaConocimiento.html'
+    }).when('/primaria/noticias/semana-de-lectura', {
+        templateUrl: 'plantillas/primaria/semanaElectura.html'
     }).when('/preescolar/noticias', {
         templateUrl: 'plantillas/preescolar/resumenNoticiasPreescolar.html'
     }).when('/preescolar/actividades', {
