@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulario calcular sobrepeso</title>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<h1>Datos de las personas</h1>
+<input type="text" id="nombre" placeholder="Nombre" / >
+<br><input type="text" id="edad" placeholder="Edad" / >
+<br><input type="text" id="estatura" placeholder="Estatura" / >
+<br><input type="text" id="peso" placeholder="Peso" / >
+<br>
+<br><input type="button" id="guardarPersona" value="Guardar persona" />
+<input type="button" id="mostrarPersona" value="Mostrar persona" />
+<input type="button" id="estadoPersona" value="Calcular estado de persona" />
+
+<table border=1>
+	<thead>
+	<tr>
+		<td>Nombre:</td>
+		<td>Edad:</td>
+		<td>Estatura:</td>
+		<td>peso:</td>
+	</tr>
+	</thead>
+	<tbody>
+		<td>
+			
+		</td>
+	</tbody>
+</table>
+<p id="resultado"></p>
+</body>
+<script>
+	var persona = {
+
+		nombre:"",
+		edad:null,
+		estatura:null,
+		peso:null,
+
+		registarPersona:function(){
+			if (validar($("#nombre").val(),$("#edad").val(),$("#estatura").val(),$("#peso").val() ))  {
+				alert("campo vacio");
+			}else{
+			persona.nombre=$("#nombre").val();
+			persona.edad=$("#edad").val();
+			persona.estatura=$("#estatura").val();
+			persona.peso=$("#peso").val();
+				
+			}
+
+		},
+
+		mostrarPersona:function(){
+			var mensaje="";
+			mensaje+="<td>"+persona.nombre+"</td><td>"+persona.edad+"</td><td>"+persona.estatura+"</td><td>"+persona.peso+"</td>";
+		},
+
+	};
+
+	function validar(nombre, edad, estatura, peso){
+		if($("#nombre").val()=="" || $("#edad").val()=="" || $("#estatura").val()=="" || $("#peso").val()==""){
+			return false;
+		}else{
+			return true;
+		}
+	}
+
+	function calcularImc(){
+		var imc=persona.peso/Math.pow(persona.altura,2);
+		if(imc < 18.5 ){
+		$("#resultado").html("El Índice de Masa Corporal de NOMBRE DE LA PERSONA es: IMC. Por tal razón su estado es Demasiado delgado(a).");
+		}else if(imc >= 18.5 && imc <=24){
+		$("#resultado").html("El Índice de Masa Corporal de NOMBRE DE LA PERSONA es: IMC. Por tal razón su estado es Normal.");
+		}else if(imc >= 25 && imc <=29){
+		$("#resultado").html("El Índice de Masa Corporal de NOMBRE DE LA PERSONA es: IMC. Por tal razón su estado es Ligero sobrepeso.");
+		}else {
+		$("#resultado").html("El Índice de Masa Corporal de NOMBRE DE LA PERSONA es: IMC. Por tal razón su estado es Obesidad.");
+		}
+	}
+</script>
+
+</html>

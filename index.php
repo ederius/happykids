@@ -9,7 +9,6 @@
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="Happy Kids, Happykids, mejores colegios, Riohacha, La Guajira">
     <meta name="google-site-verification" content="9BbdmBL-MvqydPsYL0iEPwUfRdKkfdzL0aCbtJdQscc" />
-
     <title>Centro de enseñanza y estimulaci&oacute;n Happy Kids</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
@@ -84,10 +83,6 @@
             $('.fancybox').fancybox();
     </script>
 
-
-
-
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -104,6 +99,8 @@
     $(document).live("ready", function(){
         $(".twitter").load("plantillas/widget/sidebar.html");
     })
+
+
 </script>
 <script>
 $(window).load( function() {
